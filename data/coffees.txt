@@ -1,0 +1,10 @@
+Shop	Caffeine mg./fl.oz.
+McDonald's	9.1
+Seattle's Best	10.4
+Biggby	12.5
+Dunkin'	12.7
+Dutch Bros	12.8
+Caribou	15.0
+Peet's	16.7
+Starbucks	20.6
+Deathwish	54.2
