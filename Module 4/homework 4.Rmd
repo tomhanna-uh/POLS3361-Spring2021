@@ -1,0 +1,80 @@
+---
+title: "POLS 6331: Homework 4 Answers"
+author: "Tom Hanna, Teaching Assistant"
+date: "4/1/2021"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Note
+
+Following are the homework 4 answers as calculated in R Programming Language for Statistics.
+
+If there are any questions, please send me an email at tlhanna@uh.edu with POLS6331 (all caps, no spaces) in the subject line. I also hold weekly Zoom office hours from 2 PM to 3:30 PM Tuesday and Wednesday. 
+
+```{r homework4}
+library(here)
+
+#Part 1
+meana <- 22.8
+sda <- 1.1
+
+#question 1 
+percentile24 <- pnorm(24,meana,sda); percentile24
+
+#question 2
+coveragea <- pnorm(26,meana,sda) - pnorm(20,meana,sda); coveragea
+
+#question 3
+q1a <- qnorm(0.25,meana,sda); q1a
+q3a <- qnorm(0.75,meana,sda);q3a
+
+#question 4
+iqra <- q3a - q1a; iqra
+outliera <- 1.5*iqra; outliera
+xla <- q3a + outliera; xla
+
+##Part 2
+
+satmean <- 1060
+satsd <- 210
+actmean <- 21.0
+actsd <- 5.4
+
+#question 5
+mattz <- (33 - actmean)/actsd;mattz
+mattpercentile <- pnorm(33,actmean,actsd);mattpercentile
+
+#question 6
+chrisz <- (1310 - satmean)/satsd;chrisz
+chrispercentile <- pnorm(1310,satmean,satsd);chrispercentile
+
+#In questions 7 and 8, note that I used the R function pnorm to compute
+#the answer and did not solve directly using the Z-score. If you need help with
+#that, send me an email or attend office hours. 
+
+#question 7 
+mattsat <- qnorm(mattpercentile,satmean,satsd);mattsat
+mattsatcheck <- pnorm(mattsat,satmean,satsd);mattsatcheck
+
+#question 8
+chrisact <- qnorm(chrispercentile,actmean,actsd);chrisact
+chrisactcheck <- pnorm(chrisact,actmean,actsd);chrisactcheck
+
+#Part 3
+pchipmean <- 9.12
+pchipsd <- .14
+
+#question 9
+pchip9ozperc <- pnorm(9,pchipmean,pchipsd);pchip9ozperc
+
+#question 10 x = pchipmean + z*pchipsd
+z <- c(-2,-1,0.5,1.5)
+x <- z*pchipsd + pchipmean; x     
+
+
