@@ -1,3 +1,23 @@
+---
+title: 'Homework 5: POLS 6331'
+author: "Tom Hanna, Teaching Assistant"
+date: "4/1/2021"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Note
+
+Following are the homework 5 answers as calculated in R Programming Language for Statistics.
+
+If there are any questions, please send me an email at tlhanna@uh.edu with POLS6331 (all caps, no spaces) in the subject line. I also hold weekly Zoom office hours from 2 PM to 3:30 PM Tuesday and Wednesday. 
+
+```{r}
 library(here)
 
 #question 1
