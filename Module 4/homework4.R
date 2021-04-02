@@ -48,6 +48,7 @@ pchipsd <- .14
 
 #question 9
 pchip9ozperc <- pnorm(9,pchipmean,pchipsd);pchip9ozperc
+1 - pchip9ozperc
 
 #question 10 x = pchipmean + z*pchipsd
 z <- c(-2,-1,0.5,1.5)

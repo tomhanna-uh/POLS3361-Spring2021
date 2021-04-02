@@ -28,6 +28,9 @@ notenglish <- 100 - english
 notenglish
 
 #question 6
+#Since order doesn't matter, English-French is the same as French-English, etc.
+#You can figure this out mathematically (4 x 4) - 6 duplicates or reproduce
+#the sample space and count, as follows:
 # S = = {EE, EF, EA, EO, FF, FA, FO, AA ,AO ,OO} = 10
 
 #question 7
